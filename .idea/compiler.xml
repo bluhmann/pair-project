@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="applications_main" target="1.8" />
+      <module name="applications_test" target="1.8" />
+      <module name="com.solstice.cloud-pair-project_main" target="1.8" />
+      <module name="com.solstice.cloud-pair-project_test" target="1.8" />
+      <module name="employee-service_main" target="1.8" />
+      <module name="employee-service_test" target="1.8" />
+      <module name="nomination-service_main" target="1.8" />
+      <module name="nomination-service_test" target="1.8" />
+      <module name="service-registry_main" target="1.8" />
+      <module name="service-registry_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

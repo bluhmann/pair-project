@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/applications.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/applications.iml" group="applications" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/applications_main.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/applications_main.iml" group="applications" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/applications_test.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/applications_test.iml" group="applications" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.solstice.cloud-pair-project_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.solstice.cloud-pair-project_main.iml" group="pair-project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.solstice.cloud-pair-project_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.solstice.cloud-pair-project_test.iml" group="pair-project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service.iml" group="applications/employee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service_main.iml" group="applications/employee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/employee-service/employee-service_test.iml" group="applications/employee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service.iml" group="applications/nomination-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service_main.iml" group="applications/nomination-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/nomination-service/nomination-service_test.iml" group="applications/nomination-service" />
+      <module fileurl="file://$PROJECT_DIR$/pair-project.iml" filepath="$PROJECT_DIR$/pair-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry.iml" group="applications/service-registry" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry_main.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry_main.iml" group="applications/service-registry" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry_test.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/service-registry/service-registry_test.iml" group="applications/service-registry" />
+    </modules>
+  </component>
+</project>
