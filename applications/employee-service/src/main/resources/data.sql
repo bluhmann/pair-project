@@ -1,0 +1,2 @@
+INSERT INTO EMPLOYEE (EMPLOYEE_NUMBER, FIRST_NAME, LAST_NAME, OFFICE, TITLE, EMAIL, IMAGE_URL)
+  VALUES (10001, 'Bill', 'Luhmann', 'Chicago', 'Technical Consultant', 'bluhmann@solstice.com', 'www.google.com');
