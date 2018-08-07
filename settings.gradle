@@ -1,0 +1,6 @@
+rootProject.name = 'pair-project'
+
+include 'applications/employee-service'
+include 'applications/nomination-service'
+include 'applications/service-registry'
+

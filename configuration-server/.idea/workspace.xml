@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd5d0cc7-2a27-462b-9120-7865ea6b2e7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../app-config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/bin/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/bin/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/bin/main/com/solstice/cloud/employeeservice/EmployeeServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/bin/test/com/solstice/cloud/employeeservice/EmployeeServiceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/src/main/java/com/solstice/cloud/employeeservice/EmployeeServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employee-service/src/test/java/com/solstice/cloud/employeeservice/EmployeeServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/bin/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/bin/main/com/solstice/cloud/nominationservice/NominationServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/bin/test/com/solstice/cloud/nominationservice/NominationServiceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/src/main/java/com/solstice/cloud/nominationservice/NominationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomination-service/src/test/java/com/solstice/cloud/nominationservice/NominationServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/bin/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/bin/main/com/solstice/cloud/serviceregistry/ServiceRegistryApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/bin/test/com/solstice/cloud/serviceregistry/ServiceRegistryApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/src/main/java/com/solstice/cloud/serviceregistry/ServiceRegistryApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/src/test/java/com/solstice/cloud/serviceregistry/ServiceRegistryApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-628208420">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradlew" value="1" />
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/solstice/cloud/configurationserver/ConfigurationServerApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-819" />
+    <option name="y" value="-855" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <flattenPackages Scope="true" />
+      <autoscrollToSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="configuration-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="configuration-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.solstice.cloud.configurationserver" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="configuration-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="configuration-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="configuration-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="configurationserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="configuration-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd5d0cc7-2a27-462b-9120-7865ea6b2e7c" name="Default Changelist" comment="" />
+      <created>1533648536720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533648536720</updated>
+      <workItem from="1533648538917" duration="961000" />
+      <workItem from="1533649533953" duration="1405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2366000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-819" y="-855" width="1920" height="1057" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25239617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32960597" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/solstice/cloud/configurationserver/ConfigurationServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
