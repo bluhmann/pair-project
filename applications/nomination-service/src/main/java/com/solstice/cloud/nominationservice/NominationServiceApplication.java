@@ -26,6 +26,6 @@ public class NominationServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+		logger.info("Nomination for Employee Number 10001 -> {}", repository.nominationsForEmployee(10001));
 	}
 }
