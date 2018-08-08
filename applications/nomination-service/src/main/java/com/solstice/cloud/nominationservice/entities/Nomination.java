@@ -1,17 +1,22 @@
 package com.solstice.cloud.nominationservice.entities;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import javax.transaction.Transactional;
-import java.util.Date;
 
 @Entity
 @Transactional
 public class Nomination {
 
-    private Integer nominatedEmployeeNumber;
-    private Integer nominatingEmployeeNumber;
-    private Date date;
+    @EmbeddedId
+    @AttributeOverrides({
+            @AttributeOverride(name = "nominatedEmployee", column = @Column(name="NOMINATED_EMPLOYEE")),
+            @AttributeOverride(name = "nominator", column = @Column(name="NOMINATOR")),
+            @AttributeOverride(name = "date", column = @Column(name="DATE"))
+    })
+    private NominationID nominationID;
     private String principles;
     private String description;
+
+
 
 }

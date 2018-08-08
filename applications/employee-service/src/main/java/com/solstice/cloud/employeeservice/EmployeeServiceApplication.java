@@ -3,7 +3,6 @@ package com.solstice.cloud.employeeservice;
 import com.solstice.cloud.employeeservice.repositories.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,8 +14,12 @@ public class EmployeeServiceApplication implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Autowired
-	EmployeeRepository repository;
+	private EmployeeRepository repository;
+
+	// No need to add explicit @Autowired annotation if we have only one constructor
+	public EmployeeServiceApplication(EmployeeRepository repository) {
+		this.repository = repository;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeServiceApplication.class, args);
