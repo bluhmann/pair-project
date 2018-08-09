@@ -14,8 +14,8 @@ public class EmployeeRepository {
     @PersistenceContext
     EntityManager entityManager;
 
-    public Employee findByNumber(int number) {
-        return entityManager.find(Employee.class, number);
+    public Employee getEmployeeForID(int id) {
+        return entityManager.find(Employee.class, id);
     }
 
 }

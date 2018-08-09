@@ -27,6 +27,6 @@ public class EmployeeServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("Employee Number 10001 -> {}", repository.findByNumber(10001));
+		logger.info("Employee Number 10001 -> {}", repository.getEmployeeForID(10001));
 	}
 }
