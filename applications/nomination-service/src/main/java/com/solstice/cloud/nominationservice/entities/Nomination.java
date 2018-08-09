@@ -11,7 +11,7 @@ public class Nomination {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", updatable = false, nullable = false)
-    private Long id;
+    private Integer id;
     private Integer nominatedEmployee;
     private Integer nominator;
     @Temporal(TemporalType.DATE)
