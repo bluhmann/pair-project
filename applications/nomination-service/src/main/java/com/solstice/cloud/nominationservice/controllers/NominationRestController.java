@@ -1,5 +1,6 @@
 package com.solstice.cloud.nominationservice.controllers;
 
+import com.netflix.discovery.EurekaClient;
 import com.solstice.cloud.nominationservice.entities.Nomination;
 import com.solstice.cloud.nominationservice.repositories.NominationRepository;
 import org.slf4j.Logger;
@@ -27,9 +28,12 @@ public class NominationRestController {
     private DateFormat dateFormatter = new SimpleDateFormat("yyyyMMdd");
 
     private NominationRepository repository;
+    private EurekaClient discoveryClient;
 
-    public NominationRestController(NominationRepository repository) {
+    // No @Autowired necessary if we only have one constructor
+    public NominationRestController(NominationRepository repository, EurekaClient discoveryClient) {
         this.repository = repository;
+        this.discoveryClient = discoveryClient;
     }
 
     @GetMapping("/nominations")
