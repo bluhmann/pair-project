@@ -9,16 +9,28 @@ import java.util.Date;
 public class Nomination {
 
     @Id
-    @GeneratedValue
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", updatable = false, nullable = false)
+    private Long id;
     private Integer nominatedEmployee;
     private Integer nominator;
+    @Temporal(TemporalType.DATE)
     private Date date;
     private String principles;
     private String description;
 
+    public Nomination() { }
+
+    public Nomination(Integer nominatedEmployee, Integer nominator, Date date, String principles, String description) {
+        this.nominatedEmployee = nominatedEmployee;
+        this.nominator = nominator;
+        this.date = date;
+        this.principles = principles;
+        this.description = description;
+    }
+
     @Override
     public String toString() {
-        return "employeeId: " + this.nominatedEmployee + "\nprinciples: " + this.principles;
+        return "\nid: " + this.id + "\nnominatedEmployeeId: " + this.nominatedEmployee + "\nprinciples: " + this.principles + "\ndate: " + this.date + "\n";
     }
 }
