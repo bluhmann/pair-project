@@ -1,7 +1,10 @@
 package com.solstice.cloud.nominationservice.controllers;
 
+import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
+import com.solstice.cloud.nominationservice.entities.Employee;
 import com.solstice.cloud.nominationservice.entities.Nomination;
+import com.solstice.cloud.nominationservice.models.AwesomenessNomination;
 import com.solstice.cloud.nominationservice.repositories.NominationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,10 +12,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -29,17 +34,21 @@ public class NominationRestController {
 
     private NominationRepository repository;
     private EurekaClient discoveryClient;
+    private RestTemplate restTemplate;
 
     // No @Autowired necessary if we only have one constructor
     public NominationRestController(NominationRepository repository, EurekaClient discoveryClient) {
         this.repository = repository;
         this.discoveryClient = discoveryClient;
+        this.restTemplate = new RestTemplate();
     }
 
     @GetMapping("/nominations")
-    public List<Nomination> getNominations(@RequestParam() Map<String, String> parameters) {
+    public List<AwesomenessNomination> getNominations(@RequestParam() Map<String, String> parameters) {
         if (parameters.containsKey(ID)) {
-            return getNominationsForEmployee(Integer.parseInt(parameters.get(ID)));
+            Integer id = Integer.parseInt(parameters.get(ID));
+
+            return getNominationsForEmployee(id);
         } else if (parameters.containsKey(START_DATE) && parameters.containsKey(END_DATE)) {
             return getNominationsForDateRange(parameters.get(START_DATE), parameters.get(END_DATE));
         } else if (parameters.isEmpty()) {
@@ -70,22 +79,56 @@ public class NominationRestController {
 
     // Private Helper Methods
 
-    private List<Nomination> getNominationsForEmployee(Integer id) {
-        logger.info("requesting employee number: " + id);
-        return repository.nominationsForEmployee(id);
+    private List<AwesomenessNomination> getNominationsForEmployee(Integer id) {
+        Employee nominatedEmployee = this.getEmployeeForId(id);
+        List<Nomination> nominations = repository.nominationsForEmployee(id);
+        List<AwesomenessNomination> awesomenessNominations = new ArrayList<>(nominations.size());
+
+        for(Nomination nomination: nominations) {
+            Employee nominatingEmployee = this.getEmployeeForId(nomination.getNominator());
+
+            awesomenessNominations.add(new AwesomenessNomination(nomination, nominatedEmployee, nominatingEmployee));
+
+        }
+
+        return awesomenessNominations;
     }
 
-    private List<Nomination> getNominationsForDateRange(String startDate, String endDate) {
+    private List<AwesomenessNomination> getNominationsForDateRange(String startDate, String endDate) {
         try {
-            return repository.nominationsForRange(dateFormatter.parse(startDate), dateFormatter.parse(endDate));
+            List<Nomination> nominations = repository.nominationsForRange(dateFormatter.parse(startDate), dateFormatter.parse(endDate));
+
+            return convertedNominations(nominations);
         } catch (ParseException e) {
             logger.error(e.toString());
             return null;
         }
     }
 
-    private List<Nomination> getNominationsForCurrentWeek() {
-        return repository.nominationsByWeek(new Date());
+    private List<AwesomenessNomination> getNominationsForCurrentWeek() {
+        List<Nomination> nominations = repository.nominationsByWeek(new Date());
+
+        return convertedNominations(nominations);
+    }
+
+    private Employee getEmployeeForId(Integer id) {
+        InstanceInfo instance = this.discoveryClient.getNextServerFromEureka("employee-service", false);
+        String getEmployeeURL = instance.getHomePageUrl() + "/employee?id=" + id;
+
+        return this.restTemplate.getForObject(getEmployeeURL, Employee.class);
+    }
+
+    private List<AwesomenessNomination> convertedNominations(List<Nomination> nominations) {
+        List<AwesomenessNomination> awesomenessNominations = new ArrayList<>(nominations.size());
+
+        for(Nomination nomination: nominations) {
+            Employee nominatedEmployee = this.getEmployeeForId(nomination.getNominatedEmployee());
+            Employee nominatingEmployee = this.getEmployeeForId(nomination.getNominator());
+
+            awesomenessNominations.add(new AwesomenessNomination(nomination, nominatedEmployee, nominatingEmployee));
+        }
+
+        return awesomenessNominations;
     }
 
 }

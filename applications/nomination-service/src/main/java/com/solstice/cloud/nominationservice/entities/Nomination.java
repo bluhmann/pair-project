@@ -33,4 +33,28 @@ public class Nomination {
     public String toString() {
         return "\nid: " + this.id + "\nnominatedEmployeeId: " + this.nominatedEmployee + "\nprinciples: " + this.principles + "\ndate: " + this.date + "\n";
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Integer getNominatedEmployee() {
+        return nominatedEmployee;
+    }
+
+    public Integer getNominator() {
+        return nominator;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String getPrinciples() {
+        return principles;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 }

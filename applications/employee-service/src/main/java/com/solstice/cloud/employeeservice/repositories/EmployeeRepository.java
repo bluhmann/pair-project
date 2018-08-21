@@ -18,4 +18,8 @@ public class EmployeeRepository {
         return entityManager.find(Employee.class, id);
     }
 
+    public void addEmployee(Employee employee) {
+        entityManager.merge(employee);
+    }
+
 }

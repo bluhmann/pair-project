@@ -8,12 +8,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableZuulProxy
 public class NominationServiceApplication implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());

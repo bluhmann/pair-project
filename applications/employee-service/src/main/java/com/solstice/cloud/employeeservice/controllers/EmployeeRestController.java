@@ -17,9 +17,11 @@ public class EmployeeRestController {
         this.repository = repository;
     }
 
-    @GetMapping("/employee")
+    @GetMapping(value = "/employee", produces = "application/json; charset=UTF-8")
     public Employee getEmployee(@RequestParam("id") String id) {
-        return repository.getEmployeeForID(Integer.parseInt(id));
+        Employee employee = repository.getEmployeeForID(Integer.parseInt(id));
+        System.out.println("EMPLOYEE_REST_CONTROLLER:\n" + employee);
+        return employee;
     }
 
 }

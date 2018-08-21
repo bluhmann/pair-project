@@ -1,5 +1,8 @@
 package com.solstice.cloud.nominationservice.models;
 
+import com.solstice.cloud.nominationservice.entities.Employee;
+import com.solstice.cloud.nominationservice.entities.Nomination;
+
 import java.util.Date;
 
 public class AwesomenessNomination {
@@ -12,14 +15,14 @@ public class AwesomenessNomination {
     private String description;
     private Date date;
 
-    public AwesomenessNomination(String employeeFirstName, String employeeLastName, String nominatorFirstName, String nominatorLastName, String principles, String description, Date date) {
-        this.employeeFirstName = employeeFirstName;
-        this.employeeLastName = employeeLastName;
-        this.nominatorFirstName = nominatorFirstName;
-        this.nominatorLastName = nominatorLastName;
-        this.principles = principles;
-        this.description = description;
-        this.date = date;
+    public AwesomenessNomination(Nomination nomination, Employee employee, Employee nominator) {
+        this.employeeFirstName = employee.getFirstName();
+        this.employeeLastName = employee.getLastName();
+        this.nominatorFirstName = nominator.getFirstName();
+        this.nominatorLastName = nominator.getLastName();
+        this.principles = nomination.getPrinciples();
+        this.description = nomination.getDescription();
+        this.date = nomination.getDate();
     }
 
     public String getEmployeeFirstName() {
@@ -48,5 +51,10 @@ public class AwesomenessNomination {
 
     public Date getDate() {
         return date;
+    }
+
+    @Override
+    public String toString() {
+        return "firstName: " + this.employeeFirstName + "\nlastName: " + this.employeeLastName + "\nnominatorFirstName: " + this.nominatorFirstName + "\nnominatorLastName: " + this.nominatorLastName + "\nprinciples: " + this.principles + "\ndescription: " + this.description + "\ndate: " + this.date + "\n--------\n";
     }
 }

@@ -27,9 +27,13 @@ allprojects {
 	dependencies {
 		compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 		compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+		// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-zuul
+		compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version: '2.0.1.RELEASE'
+
 		compile('org.springframework.boot:spring-boot-starter-web')
-		compile("com.h2database:h2")
 		compile('org.springframework.boot:spring-boot-starter-data-jpa')
 		testCompile('org.springframework.boot:spring-boot-starter-test')
+		
+		compile("com.h2database:h2")
 	}
 }
